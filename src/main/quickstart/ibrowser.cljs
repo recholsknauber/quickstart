@@ -1,4 +1,4 @@
-(ns quickstart.browser)
+(ns quickstart.ibrowser)
 
 ;; start is called by init and after code reloading finishes
 (defn ^:dev/after-load start []
