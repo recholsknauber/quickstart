@@ -4,9 +4,10 @@
   "src/main"
   "src/test"]
 
- :dependencies
- []
+ :dependencies [[cider/cider-nrepl "0.39.0"]]
 
+ :nrepl {:middleware [cider.nrepl/cider-middleware]}
+ 
  :dev-http
  {8020 "public"}
 
