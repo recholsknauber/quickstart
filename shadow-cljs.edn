@@ -4,7 +4,9 @@
   "src/main"
   "src/test"]
 
- :dependencies [[cider/cider-nrepl "0.39.0"]]
+ :dependencies [[cider/cider-nrepl "0.39.0"]
+                [cider/piggieback "0.5.3"]
+                [quil "3.1.0"]]
 
  :nrepl {:middleware [cider.nrepl/cider-middleware]}
  
@@ -19,4 +21,4 @@
 
    :modules
    {:main ; becomes public/js/main.js
-    {:init-fn starter.browser/init}}}}}
+    {:init-fn quickstart.browser/init}}}}}
