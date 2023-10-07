@@ -21,4 +21,4 @@
 
    :modules
    {:main ; becomes public/js/main.js
-    {:init-fn quickstart.browser/init}}}}}
+    {:init-fn quickstart.ibrowser/init}}}}}

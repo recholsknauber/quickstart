@@ -1,4 +1,5 @@
-(ns quickstart.ibrowser)
+(ns quickstart.ibrowser
+  (:require [quickstart.balls :as balls]))
 
 ;; start is called by init and after code reloading finishes
 (defn ^:dev/after-load start []
