@@ -26,8 +26,8 @@
           )
   ; Calculate x and y coordinates of the circle.
   (let [angle (:angle state)
-        x (* 35 (q/cos angle))
-        y (* 35 (q/sin angle))]
+        x (* 20 (q/cos angle))
+        y (* 20 (q/sin angle))]
     ; Move origin point to the center of the sketch.
     (q/with-translation [(/ (q/width) 2)
                          (/ (q/height) 2)]
@@ -45,8 +45,8 @@
 (defn ^:export run-sketch [host sc_width sc_height]
   (q/sketch
     :host host
-    :size [(* sc_height 0.2)
-           (* sc_height 0.2)]
+    :size [(* sc_height 0.1)
+           (* sc_height 0.1)]
     ;; :size [250 250]
     ; setup function called only once, during sketch initialization.
     :setup setup
